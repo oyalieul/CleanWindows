@@ -14,17 +14,17 @@ paths = [
 ]
 
 print("=====================================")
-print("             CleanWindows            ")
-print(" This script is cleaning unnecessary ")
-print("  files and folders from your system ")
+print("CleanWindows                         ")
+print("This script is cleaning              ")
+print("following folders                    ")
 print("=====================================")
 
 deleted_items = 0
 skipped_items = 0
 
 for path in paths:
-    print(f"Cleaning: {path}")
-
+    print(f"{path}")
+    
     if os.path.exists(path):
         try:
             items = os.listdir(path)
@@ -59,26 +59,27 @@ for path in paths:
 
     else:
         print(f"[Not Found] {path}")
+print("=====================================")
+
 
 # Summary Output
-print("=====================================")
-print("               Summary               ")
+print("Summary                              ")
 print("=====================================")
 print(f"Total items deleted: {deleted_items}")
 print(f"Items skipped:       {skipped_items}")
 print("=====================================")
-print("\n✔ Cleaning complete!")
-print("Thank you!\n")
+print("✔ Cleaning complete!")
+print("Thank you!")
 
 
 # Professional Footer
 print("=====================================")
-print("   Prepared by Golam Oyalieul Hasan  ")
-print("        Implemented in Python        ")
-print("      Requests Admin privileges      ")
-print("        via Windows manifest         ")
-print("       For support or feedback       ")
-print("      contactoyalieul@gmail.com      ")
+print("Prepared by Golam Oyalieul Hasan     ")
+print("Implemented in Python                ")
+print("Requests Admin privileges            ")
+print("via Windows manifest                 ")
+print("For support or feedback              ")
+print("contactoyalieul@gmail.com            ")
 print("=====================================\n")
 
 # Pause so console stays open

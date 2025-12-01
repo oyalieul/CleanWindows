@@ -13,11 +13,9 @@ paths = [
     "C:/Windows/Logs"
 ]
 
-print("=====================================")
-print("CleanWindows                         ")
-print("This script is cleaning              ")
-print("following folders                    ")
-print("=====================================")
+print("CleanWindows\n")
+print("This script is cleaning following folders")
+
 
 deleted_items = 0
 skipped_items = 0
@@ -59,28 +57,18 @@ for path in paths:
 
     else:
         print(f"[Not Found] {path}")
-print("=====================================")
-
 
 # Summary Output
-print("Summary                              ")
-print("=====================================")
-print(f"Total items deleted: {deleted_items}")
-print(f"Items skipped:       {skipped_items}")
-print("=====================================")
-print("✔ Cleaning complete!")
-print("Thank you!")
+print("\nSummary")
+print(f"Items deleted: {deleted_items}")
+print(f"Items skipped: {skipped_items}\n")
+print("Cleaning complete! Thank you!\n")
 
 
 # Professional Footer
-print("=====================================")
-print("Prepared by Golam Oyalieul Hasan     ")
-print("Implemented in Python                ")
-print("Requests Admin privileges            ")
-print("via Windows manifest                 ")
-print("For support or feedback              ")
-print("contactoyalieul@gmail.com            ")
-print("=====================================\n")
+print("Prepared by Golam Oyalieul Hasan. Implemented in Python")
+print("Requests Admin privileges via Windows manifest")
+print("For support or feedback, contact me at contactoyalieul@gmail.com\n")
 
 # Pause so console stays open
 input("\nPress Enter to exit...")
